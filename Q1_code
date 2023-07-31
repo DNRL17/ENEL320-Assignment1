@@ -1,0 +1,21 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+def main():
+    # x values range = [0, 10] with 100 points.
+    x = np.linspace(0, 10, 100)
+    # y value is sin(x)
+    y = np.sin(x)
+    y1 = np.cos(x)
+    
+    plt.title("Original Signal")
+    plt.ylabel("y")
+    plt.xlabel("x")
+    plt.grid(True)
+    plt.plot(x, y, x, y1)
+    plt.show()
+    print(f"{x}")
+
+main()
+
