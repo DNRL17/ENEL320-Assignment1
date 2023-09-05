@@ -24,6 +24,7 @@ Q2
 <h3>
 a)
 </h3>
+
 ![Modulated image u=0.5](/images/RX%20and%20Tx%20Design.jpg)
 <h3>
 b)
