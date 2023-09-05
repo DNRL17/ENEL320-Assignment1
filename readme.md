@@ -23,11 +23,22 @@ Q2
 <h3>
 a)
 </h3>
+<h3>
 b)
+</h3>
+<h3>
 c)
+</h3>
+<h3>
 d)
+</h3>
+<h3>
 e)
 </h3>
+<p>
+The system can take noise up to around 50% at which point the song can't be heard.\n
+The Gaussian noise has a measurement of percentage in the receiving system.\n 
+</p>
 
 ![Q3](/images/Q3_image.JPG)
 
