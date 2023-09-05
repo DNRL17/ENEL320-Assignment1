@@ -24,7 +24,6 @@ Q2
 <h3>
 a)
 </h3>
-
 ![Modulated image u=0.5](/images/RX%20and%20Tx%20Design.jpg)
 <h3>
 b)
@@ -78,5 +77,26 @@ e)
 Q3
 </h2>
 <h3>
-a)
+b)
 </h3>
+<p>
+  The following image shows the waterfall of a French AM radio at the frequiencie 17864.46 kHz and was found<br />
+  at 6:10pm on the 5/9/23. 
+</p>
+
+![French AM radio](/images/AM%20signal%20Fench%2017864.46.png)
+<p>
+  The next image is shows the waterfall of a LSB Radio at 7157.03 kHz and was found at 6:00pm on 5/9/23.
+</p>
+
+![LSB Radio](/images/LSB%20radio%207157.03.png)
+<p>
+  The folling image is a waterfall of a morse code signal found at 14027 kHz at 8:00pm on the 5/9/23.
+</p>
+
+![Morse code](/images/Morse%20Code%2014027.png)
+<p>
+  the next waterfall is a fax signal at 13988.50 kHz and was found at 8:30pm
+</p>
+
+![Japan metro fax](/images/Weird%20signal%2013988.50.png)
