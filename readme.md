@@ -36,8 +36,8 @@ d)
 e)
 </h3>
 <p>
-The system can take noise up to around 50% at which point the song can't be heard.\n
-The Gaussian noise has a measurement of percentage in the receiving system.\n 
+The system can take noise up to around 50% at which point the song can't be heard.<br />
+The Gaussian noise has a measurement of percentage in the receiving system.<br />
 </p>
 
 ![Q3](/images/Q3_image.JPG)
