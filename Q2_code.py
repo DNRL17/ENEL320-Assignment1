@@ -43,7 +43,7 @@ def basic():
     Ac = 5
     u = 0.5
     x = np.linspace(0, 10000, 100000)
-    mod = np.cos(2*np.pi*x*50000)
+    mod = np.cos(2*np.pi*x*26500)
     msg = Ac*(1+u*(np.cos(2*np.pi*200*x)))
     noise = np.random.normal(0, 0.05 * np.std(msg), size = msg.shape)
     
