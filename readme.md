@@ -22,6 +22,10 @@ Q2
 </h2>
 <h3>
 a)
+b)
+c)
+d)
+e)
 </h3>
 
 ![Q3](/images/Q3_image.JPG)
