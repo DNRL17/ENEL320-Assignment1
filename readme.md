@@ -15,20 +15,38 @@ Q1
 a)
 </h3>
 
-![Q2](/images/Q2_image.JPG)
-
 <h2>
 Q2
 </h2>
+![Q2](/images/Q2_image.JPG)
 <h3>
 a)
 </h3>
 <h3>
 b)
 </h3>
+<p>
+The code for Question 2 can be found in Q2_code.py
+</p>
 <h3>
 c)
 </h3>
+<p>
+The image below shows the modulated signal shown in Lecture example 5.4 and a u of 0.5.
+</p>
+![Modulated image u=0.5](/images/Modulated%20Model%20Wave%20u=0.5.png)
+<p>
+The image below shows the demodulated signal shown in Lecture example 5.4 and a u of 0.5.
+</p>
+![Final message u=0.5](/images/Output%20Model%20Waveform%20u%20=%200.5.png)
+<p>
+The image below shows the modulated signal shown in Lecture example 5.4 and a u of 1.
+</p>
+![Modulated image u=1](/images/Modulated%20Model%20Wave%20u=1.png)
+<p>
+The image below shows the demodulated signal shown in Lecture example 5.4 and a u of 1.
+</p>
+![Final message u=1](/images/Output%20Model%20Waveform%20u%20=%201.png)
 <h3>
 d)
 </h3>
