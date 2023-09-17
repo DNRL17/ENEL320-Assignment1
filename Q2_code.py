@@ -5,7 +5,7 @@ Created on Wed Aug 30 21:43:29 2023
 @author: BMA191 DNRL17
 """
 
-import scipy
+from scipy import signal
 import sounddevice as sd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -30,13 +30,13 @@ def songdemodulation(St, x, noise):
 
 #-------Low pass filter for the model wave----
 def lpfilter(St):
-    sos = scipy.signal.butter(10, 500, 'lp', fs=44100, output='sos')
-    return scipy.signal.sosfilt(sos,St)
+    sos = signal.butter(10, 500, 'lp', fs=44100, output='sos')
+    return signal.sosfilt(sos,St)
 
 #-------band pass filter for the song--------
 def bpfilter(St):
-    sos = scipy.signal.butter(10, [100,2000], 'bp', fs=44100, output='sos')
-    return scipy.signal.sosfilt(sos,St)
+    sos = signal.butter(10, [100,2000], 'bp', fs=44100, output='sos')
+    return signal.sosfilt(sos,St)
 
 #-------Main for the model wave------
 def basic():
@@ -73,3 +73,4 @@ def song():
     plt.ylabel("Message")
     
     plt.show()
+song()
