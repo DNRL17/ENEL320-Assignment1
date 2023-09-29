@@ -30,9 +30,9 @@ def main():
     ax[1][1].plot(freq, fft.fft(noisy_sig))
 
     # Define subplot titles
-    ax[0][0].set_title('Original Signal')
-    ax[1][0].set_title('Signal in Fourier Space')
-    ax[0][1].set_title("Noisy Signal")
+    ax[0][0].set_title('Ideal Signal')
+    ax[1][0].set_title('Ideal Signal in Fourier Space')
+    ax[0][1].set_title("Realistic Signal with Noise")
     ax[1][1].set_title("Fourier Transform of Noisy Signal")
 
     # Add grids
