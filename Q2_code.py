@@ -11,6 +11,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 from numpy.fft import fft, ifft
 
+cutoff = 3000
+sampleRate = 44100
+nyquist_freq = 0.5 * sampleRate
+high = cutoff / nyquist_freq
+low = 100/ nyquist_freq
+
+
 #-------Modulation for the moddeled wave-----
 def modulation(msg, mod):
     return (msg*mod)
@@ -22,21 +29,23 @@ def demodulation(St, x, noise):
     return lpfilter(St)
 
 #-------Demodulation for the song--------
-def songdemodulation(St, x, noise):
+def songdemodulation(St, x):
     St[St < 0] = 0
-    St += noise
+    #St += noise
     return bpfilter(St)
 
 
 #-------Low pass filter for the model wave----
 def lpfilter(St):
-    sos = signal.butter(10, 500, 'lp', fs=44100, output='sos')
+    sos = signal.butter(10, 3000, 'lp', fs=44100, output='sos')
     return signal.sosfilt(sos,St)
 
 #-------band pass filter for the song--------
 def bpfilter(St):
-    sos = signal.butter(10, [100,2000], 'bp', fs=44100, output='sos')
-    return signal.sosfilt(sos,St)
+    #sos = signal.butter(5000, [100,3000], 'bp', fs=44100, output='sos')
+    b, a = signal.butter(1, [low, high], btype='band')
+    #return signal.sosfilt(sos,St)
+    return signal.lfilter(b, a, St)
 
 #-------Main for the model wave------
 def basic():
@@ -62,8 +71,8 @@ def basic():
 def song():
     x = np.linspace(0, 107768, 107768)
     y = np.loadtxt('am_mystery_song.txt')
-    noise = np.random.normal(0, 0.5 * np.std(y), size = y.shape)
-    Mout = songdemodulation(y, x, noise)
+    #noise = np.random.normal(0, 0.5 * np.std(y), size = y.shape)
+    Mout = songdemodulation(y, x)
 
     sd.play(Mout, 44100)
     plt.plot(x, Mout)
