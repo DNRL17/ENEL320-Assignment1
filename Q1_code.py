@@ -14,7 +14,7 @@ def main():
     freq = np.fft.fftfreq(t.size, (20*np.pi)/N) # Frequency domain axis
 
     sig = (signal.square(t, 0.5) + 1) * np.sin(fs*2*np.pi*t) # Ideal Doppler wave signal (no noise)
-    noise = np.random.normal(0, .5, sig.shape)
+    noise = np.random.normal(0, .5, sig.shape) # Generate random noise
     noisy_sig = sig + noise
 
     # Initialize plots
