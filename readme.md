@@ -71,11 +71,12 @@ e)
   is the mean and 0 is the minimum.
 </p>
 
-![Q3](/images/Q3_image.JPG)
-
 <h2>
 Q3
 </h2>
+
+![Q3](/images/Q3_image.JPG)
+
 <h3>
 b)
 </h3>
