@@ -14,13 +14,13 @@ Q1
 a)
 </h3>
 
-![Model Waveform](/images/Model_of_Pulse_Doppler_Radar_Waveform.PNG)
+![Model Waveform 1](/images/Model_of_Pulse_Doppler_Radar_Waveform.png)
 
 <h3>
 b)
 </h3>
 
-![Model Waveform](/images/Model_of_Pulse_Doppler_Radar_Waveform.png)
+![Model Waveform 2](/images/Model_of_Pulse_Doppler_Radar_Waveform.png)
 
 <h3>
 c)
@@ -41,6 +41,10 @@ Simplified Fourier Expression by only looking at one pulse, removing the summati
 <p>
 It is worth noting however, that the real world signal is periodic, while the simplified expression only looks at a single period.
 </p>
+
+<h3>
+d)
+</h3>
 
 <h2>
 Q2
