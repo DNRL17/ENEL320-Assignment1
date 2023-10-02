@@ -14,6 +14,34 @@ Q1
 a)
 </h3>
 
+![Model Waveform](/images/Model_of_Pulse_Doppler_Radar_Waveform.PNG)
+
+<h3>
+b)
+</h3>
+
+![Model Waveform](/images/Model_of_Pulse_Doppler_Radar_Waveform.png)
+
+<h3>
+c)
+</h3>
+
+<p>
+Fourier Transform expression of the model Pulse Doppler Radar waveform signal:
+</p>
+
+![Fourier Transform Expression of Doppler Pulse](/images/Fourier_Transform_Expression_for_Doppler_Pulse.JPG)
+
+<p>
+Simplified Fourier Expression by only looking at one pulse, removing the summation from the equation and simplifying the bounds. 
+</p>
+
+![Simplified Fourier Expression](/images/Simplfied_Fourier_Transform_Expression.JPG)
+
+<p>
+It is worth noting however, that the real world signal is periodic, while the simplified expression only looks at a single period.
+</p>
+
 <h2>
 Q2
 </h2>
