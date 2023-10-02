@@ -39,12 +39,23 @@ Simplified Fourier Expression by only looking at one pulse, removing the summati
 ![Simplified Fourier Expression](/images/Simplfied_Fourier_Transform_Expression.JPG)
 
 <p>
-It is worth noting however, that the real world signal is periodic, while the simplified expression only looks at a single period.
+It is worth noting however, that the real world signal is periodic, while the simplified expression only looks at a single period of the ideal signal.
 </p>
 
 <h3>
 d)
 </h3>
+<p>
+The model from part b models the signal with some AWGN added to the signal to simulate the transmission of a signal through objects (not free-space) as well as any Johnson noise. The model however still relies on a few assumptions that are dificult to count on in practice such as: <br>
+
+- The transmitted frequency is perfect (no variation)
+- The impulse response approaches infinity (not possible - only have finite energy in practice)
+- The transmitted frequency is 1 Hz, different in practice
+
+To test the model, we can use a signal generator to modulate the two waveforms using the RF function, transmit via a transmission line and measure the response through a medium (the wire) using an oscilloscope. This test should be able to show some of the non-ideal characteristics that influence the waveform in the real-world.
+
+To improve the model adding variation to the frequency can make it more realistic.
+</p>
 
 <h2>
 Q2
