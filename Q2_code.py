@@ -6,7 +6,7 @@ Created on Wed Aug 30 21:43:29 2023
 """
 
 from scipy import signal
-import sounddevice as sd
+#import sounddevice as sd
 import matplotlib.pyplot as plt
 import numpy as np
 from numpy.fft import fft, ifft
@@ -23,9 +23,9 @@ def modulation(msg, mod):
     return (msg*mod)
 
 #-------Demodulation for the moddeled wave ----
-def demodulation(St, x, noise):
+def demodulation(St, x):
     St[St < 0] = 0
-    St += noise
+    #St += noise
     return lpfilter(St)
 
 #-------Demodulation for the song--------
@@ -37,7 +37,7 @@ def songdemodulation(St, x):
 
 #-------Low pass filter for the model wave----
 def lpfilter(St):
-    sos = signal.butter(10, 3000, 'lp', fs=44100, output='sos')
+    sos = signal.butter(10, 400, 'lp', fs=44100, output='sos')
     return signal.sosfilt(sos,St)
 
 #-------band pass filter for the song--------
@@ -50,19 +50,19 @@ def bpfilter(St):
 #-------Main for the model wave------
 def basic():
     Ac = 5
-    u = 0.5
+    u = 1
     x = np.linspace(0, 10000, 100000)
     mod = np.cos(2*np.pi*x*26500)
     msg = Ac*(1+u*(np.cos(2*np.pi*200*x)))
-    noise = np.random.normal(0, 0.05 * np.std(msg), size = msg.shape)
+    #noise = np.random.normal(0, 0.05 * np.std(msg), size = msg.shape)
     
     St = modulation(msg, mod)
-    Mout = demodulation(St, x, noise)
+    Mout = demodulation(St, x)
     
     plt.plot(x, Mout)
 
     plt.title("Output Model Waveform u = 1")
-    plt.xlabel("Time (s)")
+    plt.xlabel("Samples")
     plt.ylabel("Message")
     
     plt.show()  
@@ -82,4 +82,4 @@ def song():
     plt.ylabel("Message")
     
     plt.show()
-song()
+
