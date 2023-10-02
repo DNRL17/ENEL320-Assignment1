@@ -23,11 +23,11 @@ def main():
 
     # Define figures
     ax[0][0].plot(t, sig)
-    ax[1][0].plot(freq, fft.fft(sig))
+    ax[1][0].plot(freq, abs(fft.fft(sig)))
 
     # Noisy Signals
     ax[0][1].plot(t, noisy_sig)
-    ax[1][1].plot(freq, fft.fft(noisy_sig))
+    ax[1][1].plot(freq, abs(fft.fft(noisy_sig)))
 
     # Define subplot titles
     ax[0][0].set_title('Ideal Signal')
@@ -42,7 +42,7 @@ def main():
     ax[1][1].grid(True)
 
     # Name and scale figure
-    fig.suptitle('Modelling a Real-World Sonar Pulse')
+    fig.suptitle('Modelling a Pulse Doppler Radar Waveform')
     plt.subplots_adjust(top=0.85)
 
     plt.show()
