@@ -1,10 +1,7 @@
 <h1>
 ENEL320 Assignment 1
 </h1>
-
-<h2>
-Introduction
-</h2>
+<p>Author : Ben Mangin(bma191), Daegan Rose-Love(dnrl17)</p>
 <h2>
 Q1
 </h2>
